@@ -1,0 +1,276 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+/* App.css */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 200px;
+    background-color: #31363d;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.heading{
+    color: white;
+}
+
+
+/* MovieList.css */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    color: white;
+}
+
+/* MovieCard.css */
+.movie-card {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.movie-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-title {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.movie-rating {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 20px;
+
+    }
+
+    .navbar-nav {
+        padding: 20px;
+    }
+}
+
+
+
+/* Movie details link */
+
+.movie-details-link {
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.movie-details-link:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 1);
+}
+
+
+.movie-details-bg-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b2533;
+    padding: 20px;
+    color: white;
+    gap: 20px;
+}
+
+.movie-details-bg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.poster-image {
+    width: 140px;
+}
+
+@media screen and (max-width:1375px) {
+    .background-image {
+        display: none;
+    }
+
+}
+
+
+.cast-container{
+    color: white;
+}
+
+.cast-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 10px;
+}
+
+.cast-card {
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.cast-image{
+    width: 200px;
+}
+
+.charactor{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Navbar  */
+.navbar {
+    background-color: #1b2533;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-right: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 10px 20px;
+    }
+
+    .navbar-toggle .change .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .navbar-toggle .change .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle .change .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+                .navbar-toggle {
+                    display: block;
+                    cursor: pointer;
+                }
+}
+
+
+.heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-input{
+    padding: 10px;
+    outline: none;
+        border: none;
+}
+
+.button{
+    background-color: aqua;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
+
+
+/* Footer  */
+
+.footer {
+    background-color:#1b2533;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-content{
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+    justify-content: space-around;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.links{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.link{
+    color: white;
+}
